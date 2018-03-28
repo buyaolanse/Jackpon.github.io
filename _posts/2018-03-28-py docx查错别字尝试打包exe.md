@@ -1,5 +1,6 @@
 
 
+
 使用py2exe
 ide：pycharm
 file /settings / project/project interpreter 选择3.4及以下版本（py2exe不支持3.5以上）
@@ -22,4 +23,17 @@ file /settings / project/project interpreter 选择3.4及以下版本（py2exe�
         zipfile = None,
     )
 
+build成功：
 
+    running py2exe
+
+      3 missing Modules                  
+      ------------------                 
+    ? readline                            imported from cmd, code, pdb
+    ? win32api                            imported from platform
+    ? win32con                            imported from platform
+    Building 'dist\contract.exe'.
+
+    Process finished with exit code 0
+
+可执行文件.exe存放在dist目录下 
